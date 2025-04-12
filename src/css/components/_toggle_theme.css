@@ -1,0 +1,215 @@
+/* Theme Toggle Button */
+.theme-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(46, 146, 87, 0.3);
+}
+
+.theme-toggle i {
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.theme-toggle .fa-sun {
+  opacity: 0;
+  transform: translateY(20px) rotate(90deg);
+}
+
+.theme-toggle .fa-moon {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+/* Dark Theme Styles */
+:root {
+  --dark-bg-primary: #121212;
+  --dark-bg-secondary: #1e1e1e;
+  --dark-bg-elevated: #2d2d2d;
+  --dark-text-primary: #f5f5f5;
+  --dark-text-secondary: #b3b3b3;
+  --dark-border: #333333;
+  --dark-card-bg: #1e1e1e;
+}
+
+body.dark-theme {
+  background-color: var(--dark-bg-primary);
+  color: var(--dark-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme toggle icon */
+.dark-theme .theme-toggle {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme .theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .theme-toggle .fa-sun {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+.dark-theme .theme-toggle .fa-moon {
+  opacity: 0;
+  transform: translateY(-20px) rotate(-90deg);
+}
+
+/* Dark theme navbar */
+.dark-theme .navbar {
+  background: var(--dark-bg-elevated);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .logo,
+.dark-theme .nav-links a {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme .nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Dark theme sections */
+.dark-theme #about {
+  background: var(--dark-bg-primary);
+}
+
+.dark-theme #skills {
+  background: var(--dark-bg-secondary);
+}
+
+.dark-theme #projects {
+  background: var(--dark-bg-primary);
+}
+
+.dark-theme #contact {
+  background: var(--dark-bg-secondary);
+}
+
+/* Fix for section title visibility in dark mode */
+.dark-theme .section-title {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme .section-title::after {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color)
+  );
+}
+
+.dark-theme .skill-card {
+  background: var(--dark-card-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--dark-border);
+}
+
+.dark-theme .project-card {
+  background: var(--dark-card-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--dark-border);
+}
+
+.dark-theme footer {
+  background: var(--dark-bg-elevated);
+}
+
+/* Dark theme buttons */
+.dark-theme .cta-btn {
+  background: var(--dark-bg-elevated);
+  color: var(--dark-text-primary);
+  border: 1px solid var(--primary-color);
+}
+
+.dark-theme .cta-btn:hover {
+  background: var(--primary-color);
+  color: var(--dark-text-primary);
+}
+
+/* Dark theme form controls */
+.dark-theme .form-control {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text-primary);
+  border: 1px solid var(--dark-border);
+}
+
+.dark-theme .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(46, 146, 87, 0.2);
+  outline: none;
+}
+
+.dark-theme .form-control::placeholder {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark theme project carousel */
+.dark-theme .projects-grid::-webkit-scrollbar-track {
+  background: var(--dark-bg-secondary);
+}
+
+.dark-theme .projects-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Dark theme text styles */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6 {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme p {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme .skill-card h3,
+.dark-theme .project-card h3 {
+  color: var(--dark-text-primary);
+}
+
+.dark-theme .skill-card p,
+.dark-theme .project-card p {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark theme hero section */
+.dark-theme .video-overlay {
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay in dark mode */
+}
+
+.dark-theme .hero-content h1,
+.dark-theme .hero-content p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

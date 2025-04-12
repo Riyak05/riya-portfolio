@@ -1,7 +1,5 @@
 # Riya Kumari - Portfolio Website
 
-![Portfolio Preview](https://via.placeholder.com/1200x600/2e9257/FFFFFF?text=Riya+Kumari+Portfolio)
-
 A modern, responsive portfolio website built to showcase my skills, projects, and professional experience as a Full Stack Developer.
 
 ## 🌟 Features

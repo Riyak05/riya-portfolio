@@ -1,5 +1,7 @@
 # Riya Kumari - Portfolio Website
 
+![gif-portfolio](https://github.com/user-attachments/assets/bbc3f902-cd80-4fb1-88db-4f3c4b6e28e4)
+
 A modern, responsive portfolio website built to showcase my skills, projects, and professional experience as a Full Stack Developer.
 
 ## 🌟 Features
@@ -98,8 +100,3 @@ Tested and optimized for:
 ---
 
 ## Built by Riya Kumari
-
-## Add Few Website View(gif)
-
-![gif-portfolio](https://github.com/user-attachments/assets/bbc3f902-cd80-4fb1-88db-4f3c4b6e28e4)
-
